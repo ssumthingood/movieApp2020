@@ -21,11 +21,13 @@ function Movie({title, year, summary, poster, genres}){
         <p className="movie__summary">Summary : {summary.slice(0,180)}...</p>
         {/* width="300px" height="300px" */}
         </div>
+        
         <br/>
         </Link>
         </div>
         );
 }
+
 Movie.propTypes = {
     year:PropTypes.number.isRequired,
     title:PropTypes.string.isRequired,
